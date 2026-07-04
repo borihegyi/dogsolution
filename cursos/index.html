@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="event-page">
+
+  <!-- ─── Top Navigation Bar ─── -->
+  <nav class="top-nav">
+    <button class="top-nav__back" aria-label="Go back">
+      <span class="material-symbols-outlined icon-24">arrow_left_alt</span>
+    </button>
+    <span class="top-nav__title">Event details</span>
+  </nav>
+
+  <!-- ─── Scrollable Main Content ─── -->
+  <main class="main-content">
+
+    <!-- ─── Title ─── -->
+    <section class="title-section">
+      <h1 class="title-section__heading">June 2025 Board of Directors Meeting</h1>
+      <p class="title-section__subtitle">(Meeting category)</p>
+    </section>
+
+    <!-- ─── Primary Details ─── -->
+    <section class="primary-details">
+
+      <!-- Date & Time -->
+      <div class="detail-item">
+        <div class="detail-item__content">
+          <span class="detail-item__icon">
+            <span class="material-symbols-outlined icon-filled icon-20">calendar_clock</span>
+          </span>
+          <div class="detail-item__text">
+            <div>
+              <span class="detail-item__primary">Tuesday, June 10, 2025,</span>
+            </div>
+            <span class="detail-item__secondary">10:00 AM - 1:00 PM (IST)</span>
+            <span class="detail-item__hint">Times are displayed in your local timezone</span>
+          </div>
+        </div>
+        <div class="detail-item__action">
+          <span class="detail-item__action-icon material-symbols-outlined icon-20">calendar_add_on</span>
+          <span class="detail-item__action-text">Add to calendar</span>
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Hybrid Event -->
+      <div class="detail-item">
+        <div class="detail-item__content">
+          <span class="detail-item__icon">
+            <span class="material-symbols-outlined icon-filled icon-20">ads_click</span>
+          </span>
+          <div class="detail-item__text">
+            <span class="detail-item__primary">Hybrid event</span>
+            <span class="detail-item__secondary">In-person, GoTo meeting</span>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Location -->
+      <div class="detail-item" style="padding-bottom: var(--sp-3);">
+        <div class="detail-item__content">
+          <span class="detail-item__icon">
+            <span class="material-symbols-outlined icon-filled icon-20">location_on</span>
+          </span>
+          <div class="detail-item__text">
+            <span class="detail-item__primary">Executive Conference Room, 15th Floor</span>
+            <span class="detail-item__secondary">123 Corporate Plaza, Suite 1500, New<br/>New York, NY 10001</span>
+          </div>
+        </div>
+        <div class="detail-item__map">
+          <img
+            src="https://www.figma.com/api/mcp/asset/851e37df-c58f-4503-8671-53da30c763af"
+            alt="Map showing Executive Conference Room location"
+          />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── Section Divider ─── -->
+    <div class="divider-section">
+      <div class="divider"></div>
+    </div>
+
+    <!-- ─── Secondary Details ─── -->
+    <section class="secondary-details">
+
+      <!-- Description -->
+      <div class="section">
+        <h2 class="section-header">Description</h2>
+        <p class="section__body">A scheduled quarterly gathering of the Board of Directors to review company performance, discuss strategic initiatives, and align on key business decisions for the organization.</p>
+      </div>
+
+      <!-- Facilitator -->
+      <div class="section">
+        <h2 class="section-header">Facilitator</h2>
+        <div>
+          <p class="facilitator__name">Emma Richardson, Chief Officer of Technology</p>
+          <p class="facilitator__email">emma.richardson@brightstonegroup.com</p>
+        </div>
+        <a href="https://www.brightstonegroup.com/boardmeeting2025">www.brightstonegroup.com/boardmeeting2025</a>
+      </div>
+
+      <!-- Participants -->
+      <div class="section">
+        <h2 class="section-header">Participants (46)</h2>
+        <div class="participant-list">
+
+          <div>
+            <div class="participant">
+              <div class="avatar">AT</div>
+              <div class="participant__info">
+                <span class="participant__name">{Firstname Lastname}</span>
+                <span class="participant__attendance">In person</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+
+          <div>
+            <div class="participant">
+              <div class="avatar">AT</div>
+              <div class="participant__info">
+                <span class="participant__name">{Firstname Lastname}</span>
+                <span class="participant__attendance">In person</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+
+          <div>
+            <div class="participant">
+              <div class="avatar">AT</div>
+              <div class="participant__info">
+                <span class="participant__name">{Firstname Lastname}</span>
+                <span class="participant__attendance">In person</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+
+          <button class="see-all">
+            <span class="see-all__text">See all</span>
+            <span class="see-all__icon material-symbols-outlined">chevron_right</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Attachments -->
+      <div class="attachments-section">
+        <h2 class="section-header">Attachments</h2>
+
+        <!-- Books Accordion -->
+        <div class="accordion">
+          <button class="accordion__header" aria-expanded="true">
+            <div class="accordion__header-content">
+              <span class="accordion__header-icon material-symbols-outlined icon-24">expand_less</span>
+              <span class="accordion__title">Books</span>
+            </div>
+          </button>
+          <div class="accordion__body">
+
+            <!-- Book 1 -->
+            <div class="book-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">book_2</span>
+              </div>
+              <div class="book-item__content">
+                <span class="book-item__title">{Book Title}</span>
+                <span class="book-item__meta">93.21 kB</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Book 2 (with AI button) -->
+            <div class="book-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">book_2</span>
+              </div>
+              <div class="book-item__content">
+                <span class="book-item__title">{Book Title}</span>
+                <span class="book-item__meta">93.21 kB</span>
+              </div>
+              <div class="book-item__actions">
+                <button class="ai-button" aria-label="AI sparkle">
+                  <span class="material-symbols-outlined icon-filled">auto_awesome</span>
+                </button>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Book 3 (with Available Offline badge) -->
+            <div class="book-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">book_2</span>
+              </div>
+              <div class="book-item__content">
+                <span class="book-item__title">{Book Title}</span>
+                <span class="book-item__meta">93.21 kB</span>
+                <div class="badge-array">
+                  <div class="badge">
+                    <span class="badge__icon badge__icon--success">
+                      <span class="material-symbols-outlined icon-filled">download</span>
+                    </span>
+                    <span class="badge__text">Available offline</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <button class="see-all">
+              <span class="see-all__text">See all</span>
+              <span class="see-all__icon material-symbols-outlined">chevron_right</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Resources Accordion -->
+        <div class="accordion">
+          <button class="accordion__header" aria-expanded="true">
+            <div class="accordion__header-content">
+              <span class="accordion__header-icon material-symbols-outlined icon-24">expand_less</span>
+              <span class="accordion__title">Resources</span>
+            </div>
+          </button>
+          <div class="accordion__body">
+
+            <div class="file-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled" style="color: #185abd;">description</span>
+              </div>
+              <div class="file-item__content">
+                <span class="file-item__title">{File name}</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <div class="file-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled" style="color: #185abd;">description</span>
+              </div>
+              <div class="file-item__content">
+                <span class="file-item__title">{File name}</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <div class="file-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled" style="color: #185abd;">description</span>
+              </div>
+              <div class="file-item__content">
+                <span class="file-item__title">{File name}</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <button class="see-all">
+              <span class="see-all__text">See all</span>
+              <span class="see-all__icon material-symbols-outlined">chevron_right</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Surveys Accordion -->
+        <div class="accordion">
+          <button class="accordion__header" aria-expanded="true">
+            <div class="accordion__header-content">
+              <span class="accordion__header-icon material-symbols-outlined icon-24">expand_less</span>
+              <span class="accordion__title">Surveys</span>
+            </div>
+          </button>
+          <div class="accordion__body">
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">quiz</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Survey title}</span>
+              </div>
+            </div>
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">quiz</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Survey title}</span>
+              </div>
+            </div>
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">quiz</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Survey title}</span>
+              </div>
+            </div>
+
+            <button class="see-all">
+              <span class="see-all__text">See all</span>
+              <span class="see-all__icon material-symbols-outlined">chevron_right</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Polls Accordion -->
+        <div class="accordion">
+          <button class="accordion__header" aria-expanded="true">
+            <div class="accordion__header-content">
+              <span class="accordion__header-icon material-symbols-outlined icon-24">expand_less</span>
+              <span class="accordion__title">Polls</span>
+            </div>
+          </button>
+          <div class="accordion__body">
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">how_to_vote</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Poll title}</span>
+              </div>
+            </div>
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">how_to_vote</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Poll title}</span>
+              </div>
+            </div>
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">how_to_vote</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Poll title}</span>
+              </div>
+            </div>
+
+            <button class="see-all">
+              <span class="see-all__text">See all</span>
+              <span class="see-all__icon material-symbols-outlined">chevron_right</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Approvals Accordion -->
+        <div class="accordion">
+          <button class="accordion__header" aria-expanded="true">
+            <div class="accordion__header-content">
+              <span class="accordion__header-icon material-symbols-outlined icon-24">expand_less</span>
+              <span class="accordion__title">Approvals</span>
+            </div>
+          </button>
+          <div class="accordion__body">
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">check_circle</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Approval title}</span>
+              </div>
+            </div>
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">check_circle</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Approval title}</span>
+              </div>
+            </div>
+
+            <div class="collaborate-item">
+              <div class="icon-bg">
+                <span class="material-symbols-outlined icon-filled">check_circle</span>
+              </div>
+              <div class="collaborate-item__content">
+                <span class="collaborate-item__title">{Approval title}</span>
+              </div>
+            </div>
+
+            <button class="see-all">
+              <span class="see-all__text">See all</span>
+              <span class="see-all__icon material-symbols-outlined">chevron_right</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom spacing -->
+    <div style="height: var(--sp-6);"></div>
+
+  </main>
+</div>
+
+</body>
+</html>
