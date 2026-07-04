@@ -1,10 +1,24 @@
 (function () {
-  // Relative path works on GitHub Pages and local dev.
-  // To use a CDN later, set e.g. 'https://cdn.example.com/dogsolution'.
-  const ASSETS_BASE = 'assets/images';
+  function getAssetsDir() {
+    const base = new URL(window.location.href);
+    const lastSegment = base.pathname.split('/').pop() || '';
+
+    // If the URL points at a file (e.g. index.html), use its directory.
+    if (/\.[a-zA-Z0-9]+$/.test(lastSegment)) {
+      base.pathname = base.pathname.replace(/\/[^/]*$/, '/');
+    } else if (!base.pathname.endsWith('/')) {
+      // e.g. /dogsolution without trailing slash
+      base.pathname += '/';
+    }
+
+    return new URL('assets/images/', base);
+  }
+
+  const ASSETS_DIR = getAssetsDir();
 
   window.assetUrl = function assetUrl(filename) {
-    return ASSETS_BASE + '/' + filename.split('/').map(encodeURIComponent).join('/');
+    const encoded = filename.split('/').map(encodeURIComponent).join('/');
+    return new URL(encoded, ASSETS_DIR).href;
   };
 
   window.applySiteAssets = function applySiteAssets() {
