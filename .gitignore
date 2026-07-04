@@ -1,18 +1,14 @@
 .DS_Store
 *.backup
 
-# Binary image assets — kept in assets/images/ locally; host on CDN for production
-assets/images/*
-!assets/images/.gitkeep
-
-# Prevent loose binary images at repo root
-*.JPEG
-*.jpeg
-*.JPG
-*.jpg
-*.png
-*.PNG
-*.webp
-*.WEBP
-*.gif
-*.GIF
+# Prevent loose binary images at repo root (keep them in assets/images/)
+/*.JPEG
+/*.jpeg
+/*.JPG
+/*.jpg
+/*.png
+/*.PNG
+/*.webp
+/*.WEBP
+/*.gif
+/*.GIF

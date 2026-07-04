@@ -1,11 +1,7 @@
 (function () {
-  const LOCAL_HOSTS = ['localhost', '127.0.0.1'];
-  const isLocal = LOCAL_HOSTS.includes(window.location.hostname);
-
-  // Upload assets/images/* to your CDN or cloud storage, then set this URL.
-  const PRODUCTION_ASSETS_BASE = 'https://YOUR_CDN_OR_STORAGE_URL/dogsolution';
-
-  const ASSETS_BASE = isLocal ? 'assets/images' : PRODUCTION_ASSETS_BASE;
+  // Relative path works on GitHub Pages and local dev.
+  // To use a CDN later, set e.g. 'https://cdn.example.com/dogsolution'.
+  const ASSETS_BASE = 'assets/images';
 
   window.assetUrl = function assetUrl(filename) {
     return ASSETS_BASE + '/' + filename.split('/').map(encodeURIComponent).join('/');
